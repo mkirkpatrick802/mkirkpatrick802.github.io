@@ -6,18 +6,18 @@
   margin: 2%;
   background-color: lightgray;
   z-index: 1;
-  height: 104px;
-  /* margin-top: 200px; */
+  height: 350px;
+  width: 120px;
 }
 .DropdownContent{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  height: 104px;
+  height: 350px;
   font-size: 20px;
-  width: auto;
-  border-top: 5px solid black;
+  width: 120px;
   border-bottom: 5px solid black;
+  border-left: 5px solid black;
   border-right: 5px solid black;
 
 }
@@ -29,12 +29,14 @@
 .NavItems:hover{
   color: black;
 }
-.DFiller{
-  float: left;
-  height: 104px;
-  width: 90px;
+.HexFiller{
+  float: top;
+  height: 52px;
+  width: 120px;
   background: #252525;
-  margin-right: 30px;
+}
+.TextFiller{
+  margin-top: 60px;
 }
 .Links{
 }
@@ -228,6 +230,17 @@ ul{
 li{
   font-size: .4em;
   margin: 5px;
+}
+
+/* Games */
+
+.ItchPage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 80%;
+  height: 500px;
 }
 
 /* Fun Facts */
