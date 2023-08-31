@@ -1,0 +1,97 @@
+/* Hex */
+
+.Hex{
+  position: fixed;
+  margin: 2%;
+  z-index: 10;
+}
+.HexBase{
+}
+.Hex1{
+  float: left;
+  border-right: 30px solid #0E0C0A;
+  border-top: 52px solid transparent;
+  border-bottom: 52px solid transparent;
+}
+.Hex2{
+  float: left;
+  width: 60px;
+  height: 104px;
+  background-color: #0E0C0A;
+}
+.Hex3{
+  float: left;
+  border-left: 30px solid #0E0C0A;
+  border-top: 52px solid transparent;
+  border-bottom: 52px solid transparent;
+}
+.Menu{
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.bar1, .bar2, .bar3{
+  width: 35px;
+  height: 5px;
+  background-color: #6930c3;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1{
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2{
+  opacity: 0;
+}
+.change .bar3{
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Dropdown */
+
+.Dropdown{
+  display: none;
+  position: fixed;
+  margin: 2%;
+  background-color: lightgray;
+  z-index: 1;
+  height: 300px;
+  width: 120px;
+}
+.DropdownContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  font-size: 20px;
+  width: 120px;
+  border-bottom: 5px solid #0E0C0A;
+  border-left: 5px solid #0E0C0A;
+  border-right: 5px solid #0E0C0A;
+
+}
+.DropdownContent a{
+ text-decoration: none;
+ color: #6930c3;
+ margin: 10px;
+}
+.NavItems:hover{
+  color: #0E0C0A;
+}
+.HexFiller{
+  float: top;
+  height: 52px;
+  width: 120px;
+  background: #4B4F4C;
+}
+.TextFiller{
+  margin-top: 60px;
+}
+.Links{
+}

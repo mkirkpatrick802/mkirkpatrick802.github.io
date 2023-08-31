@@ -1,0 +1,21 @@
+/* Landing Page */
+
+.LandingPageLogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: auto;
+}
+
+.Greeting *{
+  text-align: center;
+}
+
+.Greeting h1{
+  padding-bottom: 20px;
+}
+
+.Greeting p{
+  padding: 5px;
+}

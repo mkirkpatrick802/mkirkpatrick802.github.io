@@ -1,0 +1,16 @@
+/* About Me */
+
+.underline2{
+  height: 10px;
+  background-color: #6930c3;
+  width: 30%;
+  margin-bottom: 60px;
+}
+.Photo{
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  margin: 20px;
+  float: right;
+  margin-bottom: 0;
+}

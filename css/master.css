@@ -1,101 +1,3 @@
-/* Dropdown */
-
-.Dropdown{
-  display: none;
-  position: fixed;
-  margin: 2%;
-  background-color: lightgray;
-  z-index: 1;
-  height: 350px;
-  width: 120px;
-}
-.DropdownContent{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 350px;
-  font-size: 20px;
-  width: 120px;
-  border-bottom: 5px solid black;
-  border-left: 5px solid black;
-  border-right: 5px solid black;
-
-}
-.DropdownContent a{
- text-decoration: none;
- color: #6930c3;
- margin: 10px;
-}
-.NavItems:hover{
-  color: black;
-}
-.HexFiller{
-  float: top;
-  height: 52px;
-  width: 120px;
-  background: #252525;
-}
-.TextFiller{
-  margin-top: 60px;
-}
-.Links{
-}
-/* Hex */
-
-.Hex{
-  position: fixed;
-  margin: 2%;
-  z-index: 10;
-}
-.HexBase{
-}
-.Hex1{
-  float: left;
-  border-right: 30px solid black;
-  border-top: 52px solid transparent;
-  border-bottom: 52px solid transparent;
-}
-.Hex2{
-  float: left;
-  width: 60px;
-  height: 104px;
-  background-color: black;
-}
-.Hex3{
-  float: left;
-  border-left: 30px solid black;
-  border-top: 52px solid transparent;
-  border-bottom: 52px solid transparent;
-}
-.Menu{
-  display: inline-block;
-  cursor: pointer;
-  margin: 0;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-}
-.bar1, .bar2, .bar3{
-  width: 35px;
-  height: 5px;
-  background-color: #6930c3;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-.change .bar1{
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-.change .bar2{
-  opacity: 0;
-}
-.change .bar3{
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-
 /* Global Styles */
 
 *, *:before, *:after{
@@ -104,7 +6,7 @@
 body, html{
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: #252525;
+  background: #4B4F4C;
 }
 .container{
   margin: auto;
@@ -114,7 +16,12 @@ body, html{
   width: 80%;
   min-height: 100vh;
   padding: 20px;
-  color: lightgray;
+  color: #E8EAD0;
+  border-style: solid;
+  border-width: 2px;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-color: #A53F32;
 }
 h1{
   text-align: center;
@@ -131,6 +38,7 @@ main p{
 }
 main{
 }
+
 p{
   font-size: 1.5em;
   margin: 0;
@@ -138,10 +46,18 @@ p{
   text-justify: inter-word;
 }
 
+.underline{
+    height: 10px;
+    background-color: #6930c3;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
 /* Footer */
 
 footer{
-  background-color: black;
+  background-color: #0E0C0A;
   width: 100%;
   color: #6930c3;
 
@@ -166,28 +82,8 @@ footer{
   margin: 20px;
 }
 
-/* About Me */
-
-.underline{
-    height: 10px;
-    background-color: #6930c3;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 60px;
-}
-.underline2{
-  height: 10px;
-  background-color: #6930c3;
-  width: 30%;
-  margin-bottom: 60px;
-}
-.Photo{
-  max-width: 100%;
-  height: auto;
-  width: 300px;
-  margin: 20px;
-  float: right;
-  margin-bottom: 0;
+.address p{
+  margin: auto;
 }
 
 /* Resume */
@@ -241,12 +137,6 @@ li{
   height: auto;
   width: 80%;
   height: 500px;
-}
-
-/* Fun Facts */
-
-.FunFacts p{
-  margin-bottom: 10px;
 }
 
 /* Gallery */
