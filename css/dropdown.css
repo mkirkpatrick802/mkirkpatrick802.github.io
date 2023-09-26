@@ -9,7 +9,7 @@
 }
 .Hex1{
   float: left;
-  border-right: 30px solid #0E0C0A;
+  border-right: 30px solid #252525;
   border-top: 52px solid transparent;
   border-bottom: 52px solid transparent;
 }
@@ -17,11 +17,11 @@
   float: left;
   width: 60px;
   height: 104px;
-  background-color: #0E0C0A;
+  background-color: #252525;
 }
 .Hex3{
   float: left;
-  border-left: 30px solid #0E0C0A;
+  border-left: 30px solid #252525;
   border-top: 52px solid transparent;
   border-bottom: 52px solid transparent;
 }
@@ -71,9 +71,9 @@
   height: 300px;
   font-size: 20px;
   width: 120px;
-  border-bottom: 5px solid #0E0C0A;
-  border-left: 5px solid #0E0C0A;
-  border-right: 5px solid #0E0C0A;
+  border-bottom: 5px solid #252525;
+  border-left: 5px solid #252525;
+  border-right: 5px solid #252525;
 
 }
 .DropdownContent a{

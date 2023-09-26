@@ -4,7 +4,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 30%;
   height: auto;
 }
 
@@ -12,8 +12,15 @@
   text-align: center;
 }
 
+.WelcomeBackdrop{
+  margin: auto;
+  width: 65%;
+  height: auto;
+}
+
 .Greeting h1{
-  padding-bottom: 20px;
+  padding: 10px;
+  font-family: 'Cinzel', serif;
 }
 
 .Greeting p{
