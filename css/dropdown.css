@@ -59,30 +59,38 @@
   display: none;
   position: fixed;
   margin: 2%;
-  background-color: lightgray;
-  z-index: 1;
   height: 300px;
   width: 120px;
+}
+.DropdownBackground{
+  position: absolute;
+  height: 371px;
+  width: 120px;
+  border-style: dashed;
+  border: 5px 5px;
+  border-color: #E8EAD0;
+  background-color: #252525;
+  z-index: -1;
 }
 .DropdownContent{
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
-  height: 300px;
+  height: 380px;
   font-size: 20px;
   width: 120px;
-  border-bottom: 5px solid #252525;
-  border-left: 5px solid #252525;
-  border-right: 5px solid #252525;
-
+  z-index: 5;
 }
 .DropdownContent a{
  text-decoration: none;
+ font-weight: bold;
+ /* text-shadow: 1px 1px #E8EAD0, 1px 1px #E8EAD0; */
  color: #6930c3;
- margin: 10px;
+ margin: 15px;
 }
 .NavItems:hover{
-  color: #0E0C0A;
+  color: #E8EAD0;
 }
 .HexFiller{
   float: top;
@@ -93,5 +101,20 @@
 .TextFiller{
   margin-top: 60px;
 }
-.Links{
+
+/* Hex Decor */
+.Hex1.DecorHex6{
+  position: relative;
+  z-index: 1;
+  bottom: 60px;
+}
+.Hex2.DecorHex6{
+  position: relative;
+  z-index: 1;
+  bottom: 60px;
+}
+.Hex3.DecorHex6{
+  position: relative;
+  z-index: 1;
+  bottom: 60px;
 }
