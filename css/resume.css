@@ -1,0 +1,52 @@
+/* Resume */
+
+.Filler{
+  height: 40px;
+}
+.resume *{
+  text-align: center;
+  font-size: 120%;
+}
+.resume h2{
+  font-size: 2em;
+}
+.resume h3{
+  font-size: 1em;
+  margin: 10px;
+}
+.resume h6{
+  font-size: .8em;
+  margin: 10px;
+  color: #6930c3;
+}
+.PDF{
+  color: lightgray;
+  font-size: 1.5em;
+}
+.PDFDiv{
+  border: 10px #6930c3 solid;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  font-size: .4em;
+  margin: 5px;
+}
+
+/* Games */
+
+.ItchPage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 80%;
+  height: 500px;
+}

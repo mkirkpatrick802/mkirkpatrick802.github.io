@@ -6,6 +6,7 @@
   width: 30%;
   margin-bottom: 30px;
 }
+
 .Photo{
   max-width: 100%;
   height: auto;
@@ -18,4 +19,12 @@
 .space{
   width: auto;
   height: 20px;
+}
+
+.Secret{
+  margin-top: 100px;
+}
+
+.Secret button{
+
 }
