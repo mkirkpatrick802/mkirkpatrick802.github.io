@@ -1,41 +1,12 @@
-/* Landing Page */
+/* About Me */
 
-.LandingPageLogo{
+.headshot img{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  float: right;
+  width: 20vw;
   height: auto;
-}
-
-.Greeting *{
-  text-align: center;
-}
-
-.WelcomeBackdrop{
-  margin: auto;
-  width: 65%;
-  height: auto;
-}
-
-.Greeting h1{
-  padding: 10px;
-  font-family: 'Cinzel', serif;
-}
-
-.Greeting p{
-  padding: 5px;
-}
-
-.IconContainer{
-  width: 80%;
-  height: 20%;
-  text-align: center;
-  margin: auto;
-  margin-top: 5%;
-}
-
-.Icon{
-  width: 15%;
-  margin: 2%;
+  border: 5px solid black;
 }

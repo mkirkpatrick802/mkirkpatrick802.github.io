@@ -2,7 +2,7 @@
 
 .Hex{
   position: fixed;
-  margin: 2%;
+  margin-top: 2%;;
   z-index: 10;
 }
 .HexBase{
@@ -61,6 +61,7 @@
   margin: 2%;
   height: 300px;
   width: 120px;
+  z-index: 5;
 }
 .DropdownBackground{
   position: absolute;
@@ -70,7 +71,7 @@
   border: 5px 5px;
   border-color: #E8EAD0;
   background-color: #252525;
-  z-index: -1;
+  z-index: 3;
 }
 .DropdownContent{
   display: flex;
@@ -112,16 +113,16 @@
 /* Hex Decor */
 .Hex1.DecorHex6{
   position: relative;
-  z-index: 1;
+  z-index: 3;
   bottom: 60px;
 }
 .Hex2.DecorHex6{
   position: relative;
-  z-index: 1;
+  z-index: 3;
   bottom: 60px;
 }
 .Hex3.DecorHex6{
   position: relative;
-  z-index: 1;
+  z-index: 3;
   bottom: 60px;
 }

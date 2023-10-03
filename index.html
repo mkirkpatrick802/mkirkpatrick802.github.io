@@ -5,72 +5,75 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src="js/master.js"></script>
     <link rel="icon" href="img/logo(48x48).png"/>
-    <title>Hello!</title>
+    <title>About Me</title>
   </head>
   <body>
-    <!-- Hex -->
-    <div class="Hex">
-      <div class="Menu" onclick="Menu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-      <div class="HexBase">
-        <div class="Hex1"></div>
-        <div class="Hex2"></div>
-        <div class="Hex3"></div>
-      </div>
-    </div>
-    <!-- Dropdown -->
-    <div class="Dropdown" id="myDropdown">
-      <div class="DropdownBackground"></div>
-      <div class="DropdownContent">
-        <div class="HexFiller"></div>
-        <div class="TextFiller"></div>
-        <div class="DropdownLine"></div>
-        <a href="AboutMe.html" class="NavItems">About Me</a>
-        <div class="DropdownLine"></div>
-        <a href="Resume.html" class="NavItems">Resume</a>
-        <div class="DropdownLine"></div>
-        <a href="Gallery.html" class="NavItems">Gallery</a>
-        <div class="DropdownLine"></div>
-        <a href="https://lykosthebroken.itch.io/" class="NavItems">Games</a>
-        <div class="DropdownLine"></div>
-      </div>
-      <div class="Hex1 DecorHex6"></div>
-      <div class="Hex2 DecorHex6"></div>
-      <div class="Hex3 DecorHex6"></div>
-    </div>
     <!-- Content -->
-    <div class="Top">
-      <div class="NameHolder">
-        <p>Michael Kirkpatrick</p>
-      </div>
-    </div>
-    <div class="container">
-      <header>
-        <img src="img/logo.png" alt="Personal Logo" class="LandingPageLogo">
-      </header>
-      <main>
-        <div class="Greeting">
-          <div class="WelcomeBackdrop">
-            <h2>Welcome to my <span style="color: #A53F32">Website</span>!</h2>
+    <div class="BlackOut"></div>
+    <div class="contentContainer">
+      <div class="sidebar">
+        <!-- Hex -->
+        <div class="Hex">
+          <div class="Menu" onclick="Menu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
-          <p>I'm <span style = "color: #A53F32; font-weight: bold;">Michael Kirkpatrick</span>, a game programmer specializing in AI and Physics.</p>
+          <div class="HexBase">
+            <div class="Hex1"></div>
+            <div class="Hex2"></div>
+            <div class="Hex3"></div>
+          </div>
         </div>
-        <div class="IconContainer">
-          <a href="AboutMe.html"><img src="img/ProfileIcon.png" alt="Profile Icon" class = "Icon"></a>
-          <a href="Resume.html"><img src="img/ResumeIcon.png" alt="Resume Icon" class = "Icon"></a>
-          <a href="Gallery.html"><img src="img/GalleryIcon.png" alt="Gallery Icon" class = "Icon"></a>
-          <a href="https://lykosthebroken.itch.io/"><img src="img/ControllerIcon.png" alt="Controller Icon" class = "Icon"></a>
+        <!-- Dropdown -->
+        <div class="Dropdown" id="myDropdown">
+          <div class="DropdownBackground"></div>
+          <div class="DropdownContent">
+            <div class="HexFiller"></div>
+            <div class="TextFiller"></div>
+            <div class="DropdownLine"></div>
+            <a href="AboutMe.html" class="NavItems">About Me</a>
+            <div class="DropdownLine"></div>
+            <a href="Resume.html" class="NavItems">Resume</a>
+            <div class="DropdownLine"></div>
+            <a href="Gallery.html" class="NavItems">Gallery</a>
+            <div class="DropdownLine"></div>
+            <a href="https://lykosthebroken.itch.io/" class="NavItems">Games</a>
+            <div class="DropdownLine"></div>
+          </div>
+          <div class="Hex1 DecorHex6"></div>
+          <div class="Hex2 DecorHex6"></div>
+          <div class="Hex3 DecorHex6"></div>
+        </div>
+        <!-- Project Display -->
+        <div class="projects">
+          <div class="projectFiller"></div>
+          <div class="project">
+            <video src="content/MazeGeneration.mp4"></video>
+            <div class="text active">
+              <p>Depth First Search, Maze Generation</p>
+            </div>
+          </div>
+          <div class="project">
+            <video src="content/MazeGeneration.mp4"></video>
+            <div class="text active">
+              <p>Depth First Search, Maze Generation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="name">
+          <p>Michael Kirkpatrick </p>
+        </div>
+        <div class="headshot">
+          <img src="img/Headshot.jpg" alt="">
         </div>
       </main>
     </div>
@@ -87,4 +90,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/master.js"></script>
 </html>
