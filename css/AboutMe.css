@@ -8,6 +8,7 @@
 }
 
 .Photo{
+  max-width: 50%;
   height: auto;
   width: 400px;
   margin: 20px;
