@@ -36,13 +36,11 @@ body, html{
 }
 
 .ProjectFiller{
-  height: 0vh;
-  transition: all 400ms ease;
+  height: 0;
 }
 
 .ProjectFiller.Expand{
-  height: 35vh;
-  transition: all 400ms ease;
+  height: 10vh;
 }
 
 .project{
