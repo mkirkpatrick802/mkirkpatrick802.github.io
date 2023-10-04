@@ -1,8 +1,9 @@
 /* Hex */
 
 .Hex{
-  position: fixed;
-  margin-top: 2%;;
+  position: relative;
+  display: block;
+  margin-top: 10%;;
   z-index: 10;
 }
 .HexBase{
@@ -57,7 +58,7 @@
 
 .Dropdown{
   display: none;
-  position: fixed;
+  position: absolute;
   margin: 2%;
   height: 300px;
   width: 120px;
@@ -95,7 +96,7 @@
 }
 .HexFiller{
   float: top;
-  height: 52px;
+  height: 40px;
   width: 120px;
   background: #4B4F4C;
 }

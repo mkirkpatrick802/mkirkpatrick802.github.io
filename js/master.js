@@ -1,10 +1,17 @@
+const filler = document.querySelector(".ProjectFiller");
+
 function Menu(x) {
   x.classList.toggle("change");
   var drop = document.getElementById("myDropdown");
-  if (drop.style.display === "block") {
+  if (drop.style.display === "block")
+  {
     drop.style.display = "none";
-  } else {
+    filler.classList.remove("Expand");
+  }
+  else
+  {
     drop.style.display = "block";
+    filler.classList.add("Expand");
   }
 }
 

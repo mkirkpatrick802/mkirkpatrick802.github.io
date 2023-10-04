@@ -12,32 +12,48 @@ body, html{
 .contentContainer{
   display: flex;
   width: 100%;
+  max-height: 100vh;
+  height: 100vh;
 }
 
 .sidebar{
   width: 15%;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  flex-wrap: wrap;
+  overflow-y: scroll
+  /* //-ms-overflow-style: none;
+  //scrollbar-width: none; */
 }
+
+/* .sidebar::-webkit-scrollbar{
+  display: none;
+} */
 
 .projects{
   display: flex;
   flex-direction: column;
 }
 
-.projectFiller{
-  height: 20%;
+.ProjectFiller{
+  height: 0vh;
+  transition: all 400ms ease;
+}
+
+.ProjectFiller.Expand{
+  height: 35vh;
+  transition: all 400ms ease;
 }
 
 .project{
-  margin-top: 50px;;
+  margin-top: 5vh;;
   width: 13vw;
   height: 13vh;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
 
 .project video{
