@@ -6,12 +6,10 @@ function Menu(x) {
   if (drop.style.display === "block")
   {
     drop.style.display = "none";
-    filler.classList.remove("Expand");
   }
   else
   {
     drop.style.display = "block";
-    filler.classList.add("Expand");
   }
 }
 

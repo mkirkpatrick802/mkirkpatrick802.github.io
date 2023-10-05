@@ -1,9 +1,16 @@
 /* Hex */
 
+.HexContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 250px;
+  margin: 5vh;
+}
+
 .Hex{
   position: relative;
   display: block;
-  margin-top: 10%;;
   z-index: 10;
 }
 .HexBase{
@@ -59,15 +66,14 @@
 .Dropdown{
   display: none;
   position: relative;
-  margin: 2%;
   height: 300px;
   width: 120px;
   z-index: 5;
-  bottom: 55px;
+  bottom: 52px;
 }
 .DropdownBackground{
   position: absolute;
-  height: 371px;
+  height: 291px;
   width: 120px;
   border: 2px solid #E8EAD0;
   background-color: #252525;
@@ -78,7 +84,7 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-  height: 380px;
+  height: 300px;
   font-size: 20px;
   width: 120px;
   z-index: 5;

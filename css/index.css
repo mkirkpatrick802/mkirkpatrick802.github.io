@@ -8,5 +8,6 @@
   float: right;
   width: 20vw;
   height: auto;
-  border: 5px solid black;
+  border: 1px solid #0E0C0A;
+  box-shadow: 0 0 10px 4px #0E0C0A;
 }

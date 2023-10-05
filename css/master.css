@@ -21,35 +21,27 @@ body, html{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  overflow-y: scroll
-  /* //-ms-overflow-style: none;
-  //scrollbar-width: none; */
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-/* .sidebar::-webkit-scrollbar{
+.sidebar::-webkit-scrollbar{
   display: none;
-} */
+}
 
 .projects{
   display: flex;
   flex-direction: column;
 }
 
-.ProjectFiller{
-  height: 0;
-}
-
-.ProjectFiller.Expand{
-  height: 10vh;
-}
-
 .project{
-  margin-top: 5vh;;
-  width: 13vw;
-  height: 13vh;
+  margin: 4vh 4vh;
+  width: 12vw;
+  height: 12vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   cursor: pointer;
   position: relative;
 }
@@ -62,7 +54,7 @@ body, html{
 .project video.sized{
   width: 50vw;
   height: 50vh;
-  position: absolute;
+  position: fixed;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -79,21 +71,21 @@ body, html{
 }
 
 .BlackOut.active{
-  background-color: black;
+  background-color: #0E0C0A;
   opacity: .5;
 }
 
 .project .text{
   position: absolute;
-  font-size: .6vw;
-  background-color: #6930c3;
-  color: white;
+  width: 100%;
+  font-size: 11px;
+  background-color: rgba(75, 79, 76, .9);
+  color: #E8EAD0;
   padding: 8px 16px;
-  border-radius: 8px;
   pointer-events: none;
   box-shadow: 4px 4px 50px -4px rgba(0, 0, 0, 0.8);
   opacity: 0;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.4px;
   transition: all 400ms ease;
 }
 
@@ -104,26 +96,29 @@ body, html{
 
 main{
   width: 85%;
-  background-color: #6930c3;
+  padding: 30px;
+  background-image: linear-gradient(to bottom right, #6930c3 70%, #A53F32);
   height: auto;
   flex: 1;
+  box-shadow: 0 0 20px 10px #0E0C0A;
 }
 
 main .name{
 }
 
 main .name p{
-  font-size: 3vw;
-  margin: 20px;
+  margin: 0;
+  font-size: 4vw;
+  font-family: Calibri, Serif;
 }
 
 main .name p::after{
   content: "";
   width: 5px;
-  height: 5vh;
-  background-color: black;
+  height: 3vw;
+  background-color: #0E0C0A;
   display: inline-block;
-  animation: cursor-blink 1.2s steps(2) infinite;
+  animation: cursor-blink 1.5s steps(2) infinite;
 }
 
 @keyframes cursor-blink {
@@ -132,19 +127,18 @@ main .name p::after{
   }
 }
 
-h1{
-  text-align: center;
-  font-size: 4vw;
-  margin: 10px;
-}
-h2{
+.Title{
   font-size: 3vw;
-  margin: 10px;
-}
-h3{
-  font-size: 1.5vw;
+  font-family: Calibri, Serif;
   font-weight: lighter;
-  margin: 5px;
+  margin-top: 10px;
+}
+
+.AboutMe{
+  text-align: justify;
+  text-justify: auto;
+  max-width: 60vw;
+  font-size: 1.5vw;
 }
 
 /* Footer */
