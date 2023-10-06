@@ -1,23 +1,16 @@
 /* Hex */
 
-.HexContainer{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 250px;
-  margin: 5vh;
-}
-
 .Hex{
-  position: relative;
+  position: absolute;
   display: block;
   z-index: 10;
+  margin: 20px;
 }
 .HexBase{
 }
 .Hex1{
   float: left;
-  border-right: 30px solid #252525;
+  border-right: 30px solid #4B4F4C;
   border-top: 52px solid transparent;
   border-bottom: 52px solid transparent;
 }
@@ -25,11 +18,11 @@
   float: left;
   width: 60px;
   height: 104px;
-  background-color: #252525;
+  background-color: #4B4F4C;
 }
 .Hex3{
   float: left;
-  border-left: 30px solid #252525;
+  border-left: 30px solid #4B4F4C;
   border-top: 52px solid transparent;
   border-bottom: 52px solid transparent;
 }
@@ -45,7 +38,7 @@
 .bar1, .bar2, .bar3{
   width: 35px;
   height: 5px;
-  background-color: #6930c3;
+  background-color: #E8EAD0;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -69,14 +62,14 @@
   height: 300px;
   width: 120px;
   z-index: 5;
-  bottom: 52px;
+  top: 73px;
 }
 .DropdownBackground{
   position: absolute;
   height: 291px;
   width: 120px;
   border: 2px solid #E8EAD0;
-  background-color: #252525;
+  background-color: #4B4F4C;
   z-index: 3;
 }
 .DropdownContent{
@@ -93,7 +86,7 @@
  text-decoration: none;
  font-weight: bold;
  /* text-shadow: 1px 1px #E8EAD0, 1px 1px #E8EAD0; */
- color: #6930c3;
+ color: #E8EAD0;
  margin: 15px;
 }
 .NavItems:hover{

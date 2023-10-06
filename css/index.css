@@ -2,12 +2,30 @@
 
 .headshot img{
   display: block;
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  position: relative;
   float: right;
-  width: 20vw;
+  width: 22vw;
   height: auto;
   border: 1px solid #0E0C0A;
   box-shadow: 0 0 10px 4px #0E0C0A;
+  top: 30px;
+  margin: 50px;
+}
+
+.AboutMe{
+  text-align: justify;
+  font-size: 1.6vw;
+}
+
+.Flex{
+  display: flex;
+  flex-direction: column;
+}
+
+.AboutMe p{
+  padding: 20px;
+  margin: 10px;
+  width: fit-content;
+  border-radius: 20px;
+  background-color: rgba(232, 234, 208, 0.15);
 }
