@@ -36,7 +36,7 @@ body, html{
 
 .projectFiller{
   width: 100%;
-  height: 15vh;
+  height: 180px;
 }
 
 .project{
@@ -81,11 +81,13 @@ body, html{
 
 .project .text{
   position: absolute;
+  bottom: -10px;
   width: 100%;
-  font-size: 16px;
-  background-color: rgba(75, 79, 76, .9);
+  max-height: 50px;
+  font-size: .8vw;
+  background-color: rgba(75, 79, 76, .95);
   color: #E8EAD0;
-  padding: 8px 16px;
+  padding-left: 20px;
   pointer-events: none;
   box-shadow: 4px 4px 50px -4px rgba(0, 0, 0, 0.8);
   opacity: 0;
@@ -100,34 +102,47 @@ body, html{
 main{
   width: 85%;
   padding: 30px;
-  background-image: linear-gradient(to bottom right, #6930c3 70%, #A53F32);
+  background: #808080;
   flex: 1;
   box-shadow: 0 0 20px 10px #0E0C0A;
+  cursor: default;
 }
 
 main .name{
+  padding-left: 20px;
 }
 
 main .name p{
   margin: 0;
-  padding-left: 20px;
   font-size: 4vw;
-  font-family: Calibri, Serif;
+  font-family: Calibri, serif;
 }
 
 main .name p::after{
   content: "";
   width: 5px;
   height: 3vw;
-  background-color: #0E0C0A;
+  background-color: #901010;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(144, 16, 16,.5);
   display: inline-block;
-  animation: cursor-blink 1.5s steps(2) infinite;
+  animation-name: cursor-blink;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1,0,0,1);
+  animation-duration: 1s;
+}
+
+main .name .underline{
+  height: 5px;
+  width: 35vw;
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  background-color: #901010;
 }
 
 @keyframes cursor-blink {
-  0% {
-    opacity: 0;
-  }
+  from { opacity: 1.0; } to { opacity: 0.0; }
 }
 
 /* Footer */
@@ -135,7 +150,7 @@ main .name p::after{
 footer{
   background-color: #0E0C0A;
   width: 100%;
-  color: #6930c3;
+  cursor: default;
 }
 .footer{
   display: flex;
@@ -165,46 +180,68 @@ footer .name p{
 .address p{
   margin: 3px;
   font-size: 2vw;
-  color: #A53F32;
+  color: #901010;
 }
 
 .address a{
   margin: 3px;
   font-size: 1vw;
-  color: #A53F32;
+  color: #901010;
 }
 
 /* Responsive */
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1100px) {
+  .contentContainer{
+    flex-direction: column-reverse;
+  }
 
-  .PDFDiv{
-    margin: 0 auto;
+  main{
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+  }
+
+  main .name p{
+    padding: 0;
+    font-size: 10vw;
+  }
+
+  main .name p::after{
+    height: 8vw;
+  }
+
+  main .name .underline {
+    margin: auto;
+    width: 90vw;
+  }
+
+  .sidebar{
     width: 100%;
   }
-  .container{
+
+  .project{
+    width: 100%;
+    margin-top: 110px;
+    margin-left: 0;
+    margin-right: 0;
   }
-  body{
-    text-align: center;
+
+  .projectFiller{
+    width: 100%;
   }
-  main p{
-    font-size: 25px;
+
+  .project .text
+  {
+    max-height: 100px;
+    font-size: 5vw;
   }
-  header{
-    margin-top: 100px;
+
+  footer .name p{
+    font-size: 4vw;
   }
-  .underline2{
-    margin: 0 auto;
-  }
-  .Photo{
-    float: none;
-  }
-  figure{
-    margin-top: 20px;
-    grid-template-columns: repeat(1, minmax(400px, 800px));
-  }
-  .footer, .name, .address{
-    flex-direction: column;
-    align-items: center;
+
+  .address a{
+    font-size: 3vw;
   }
 }

@@ -4,7 +4,7 @@
   position: absolute;
   display: block;
   z-index: 10;
-  margin: 20px;
+  margin: 40px;
 }
 .HexBase{
 }
@@ -38,7 +38,7 @@
 .bar1, .bar2, .bar3{
   width: 35px;
   height: 5px;
-  background-color: #E8EAD0;
+  background-color: #901010;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -62,13 +62,13 @@
   height: 300px;
   width: 120px;
   z-index: 5;
-  top: 73px;
+  top: 91px;
 }
 .DropdownBackground{
   position: absolute;
   height: 291px;
   width: 120px;
-  border: 2px solid #E8EAD0;
+  border: 2px solid #901010;
   background-color: #4B4F4C;
   z-index: 3;
 }
@@ -90,17 +90,16 @@
  margin: 15px;
 }
 .NavItems:hover{
-  color: #E8EAD0;
+  color: #901010;
 }
 .TextFiller{
   margin-top: 60px;
 }
 .DropdownLine{
-  height: 1px;
+  height: 2px;
   width: 70px;
-  background-color: white;
+  background-color: #901010;
   z-index: 5;
-  position: relative;
 }
 
 /* Hex Decor */
@@ -118,4 +117,8 @@
   position: relative;
   z-index: 3;
   bottom: 60px;
+}
+
+@media only screen and (max-width: 1100px) {
+
 }
