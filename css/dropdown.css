@@ -38,7 +38,7 @@
 .bar1, .bar2, .bar3{
   width: 35px;
   height: 5px;
-  background-color: #901010;
+  background-color: #6d0c0c;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -68,7 +68,7 @@
   position: absolute;
   height: 291px;
   width: 120px;
-  border: 2px solid #901010;
+  border: 2px solid #6d0c0c;
   background-color: #4B4F4C;
   z-index: 3;
 }
@@ -90,7 +90,7 @@
  margin: 15px;
 }
 .NavItems:hover{
-  color: #901010;
+  color: #6d0c0c;
 }
 .TextFiller{
   margin-top: 60px;
@@ -98,7 +98,7 @@
 .DropdownLine{
   height: 2px;
   width: 70px;
-  background-color: #901010;
+  background-color: #6d0c0c;
   z-index: 5;
 }
 
