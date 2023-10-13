@@ -18,18 +18,20 @@
     <!-- Content -->
     <div class="BlackOut"></div>
     <div class="contentContainer">
-      <div class="sidebar">
+      <div class="sidebar" id="sidebar">
         <!-- Hex -->
-        <div class="Hex">
-          <div class="Menu" onclick="Menu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-          <div class="HexBase">
-            <div class="Hex1"></div>
-            <div class="Hex2"></div>
-            <div class="Hex3"></div>
+        <div class="HexHolder">
+          <div class="Hex">
+            <div class="Menu" onclick="Menu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div class="HexBase">
+              <div class="Hex1"></div>
+              <div class="Hex2"></div>
+              <div class="Hex3"></div>
+            </div>
           </div>
         </div>
         <!-- Dropdown -->
@@ -65,6 +67,12 @@
             </div>
           </div>
           <div class="project">
+            <video muted src="content/AstarCatchTheCat.mp4"></video>
+            <div class="text active">
+              <p>Astar Path Finding</p>
+            </div>
+          </div>
+          <div class="project">
             <video muted src="content/1$ShapeRecognition.mp4"></video>
             <div class="text active">
               <p>1$ Shape Recognition</p>
@@ -78,7 +86,7 @@
           </div>
         </div>
       </div>
-      <main>
+      <main class="main" id="main">
         <div class="name">
           <p>Michael Kirkpatrick </p>
           <div class="underline"></div>

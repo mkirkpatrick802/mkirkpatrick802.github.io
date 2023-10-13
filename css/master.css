@@ -16,7 +16,8 @@ body, html{
 }
 
 .sidebar{
-  width: 15%;
+  width: 20%;
+  max-height: 100vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -40,8 +41,8 @@ body, html{
 }
 
 .project{
-  margin: 4vh 4vh;
-  width: 12vw;
+  margin: 6vh 6vh;
+  width: 16vw;
   height: 12vh;
   display: flex;
   justify-content: center;
@@ -217,14 +218,14 @@ footer .name p{
   }
 
   .sidebar{
-    height: auto;
+    height: 200px;
     width: 100%;
     overflow-y: visible;
   }
 
   .project{
     position: relative;
-    display: block;
+    display: none;
     width: 100%;
     margin-top: 110px;
     margin-left: 0;
