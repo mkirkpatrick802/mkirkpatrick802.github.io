@@ -1,20 +1,35 @@
 /* About Me */
 
-.headshot img{
+.top{
+}
+
+.headshot{
   display: block;
   position: relative;
   float: right;
+  margin-left: 30px;
   width: 22vw;
   height: auto;
-  border: 1px solid #0E0C0A;
-  box-shadow: 0 0 10px 4px rgb(14, 12, 10);
-  top: 30px;
-  margin: 50px;
 }
 
-.AboutMe{
+.headshot img{
+  border: 1px solid #0E0C0A;
+  box-shadow: 0 0 10px 4px rgb(14, 12, 10);
+}
+
+.headshot p{
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  text-align: center;
+  margin-top: 8px;
+}
+
+.aboutMe{
   text-align: justify;
   font-size: 1.4vw;
+  flex-direction: column;
+  display: flex;
 }
 
 .Flex{
