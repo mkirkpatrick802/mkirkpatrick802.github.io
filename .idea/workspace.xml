@@ -5,8 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f112f0f4-5464-4cfc-86d6-625a30f655de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Website/content/Living Resume.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/portfolio/1$ShapeRecognition.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/portfolio/AstarCatchTheCat.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/portfolio/GameJamPractice.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/portfolio/GameOfLife.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/portfolio/MazeGeneration.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/resources/Headshot.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/resources/JordanTrip.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/resources/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/resources/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/resources/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/resources/jordan-pony.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/resources/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/resources/logo(48x48).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/resources/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/content/resources/spotify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/css/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/css/master.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/css/showcase.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/html/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/html/showcase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Website.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Living Resume.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/portfolio/1$ShapeRecognition.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/portfolio/AstarCatchTheCat.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/portfolio/GameJamPractice.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/portfolio/GameOfLife.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/portfolio/MazeGeneration.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resources/Headshot.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resources/JordanTrip.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resources/email.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resources/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resources/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resources/jordan-pony.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resources/linkedin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resources/logo(48x48).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resources/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resources/spotify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/dropdown.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/master.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/resume.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/master.js" beforeDir="false" afterPath="$PROJECT_DIR$/Website/js/showcase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +65,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -41,24 +91,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Michael/Documents/mkirkpatrick802.github.io&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Michael/Documents/mkirkpatrick802.github.io/html",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "JavaScript.Libraries",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\Documents\mkirkpatrick802.github.io\html" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\Documents\mkirkpatrick802.github.io\html" />
       <recent name="C:\Users\Michael\Documents\mkirkpatrick802.github.io\content\resources" />
       <recent name="C:\Users\Michael\Documents\mkirkpatrick802.github.io\content\portfolio" />
       <recent name="C:\Users\Michael\Documents\Website\content" />
@@ -92,10 +150,15 @@
       <workItem from="1697156152667" duration="3096000" />
       <workItem from="1719386036072" duration="353000" />
       <workItem from="1719458448868" duration="12598000" />
+      <workItem from="1719812458532" duration="2069000" />
+      <workItem from="1719821075893" duration="4104000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
