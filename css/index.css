@@ -1,59 +1,31 @@
-/* About Me */
-
-.top{
-}
-
-.headshot{
-  display: block;
-  position: relative;
-  float: right;
-  margin-left: 30px;
-  width: 22vw;
-  height: auto;
-}
-
-.headshot img{
-  border: 1px solid #0E0C0A;
-  box-shadow: 0 0 10px 4px rgb(14, 12, 10);
-}
-
-.headshot p{
-  opacity: 0;
-  transition: opacity 0.5s ease;
-
-  text-align: center;
-  margin-top: 8px;
-}
-
-.aboutMe{
-  text-align: justify;
-  font-size: 1.4vw;
-  flex-direction: column;
-  display: flex;
-}
-
-.Flex{
-  display: flex;
-  flex-direction: column;
-}
-
-.AboutMe p{
-  padding: 20px;
-  margin: 1px;
-  width: fit-content;
-}
-
-@media only screen and (max-width: 1100px) {
-  .headshot img{
-    float: none;
+#questions{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
     margin: auto;
-    width: 50vw;
-  }
+}
 
-  .AboutMe{
-    margin-top: 40px;
-    text-align: left;
-    font-size: 6vw;
-  }
+.question{
 
+}
+
+#name_underline{
+    width: 70vw;
+    height: 5px;
+    background: linear-gradient(to right, transparent, #283618ff 10%);
+    filter: blur(.3px);
+    border-radius: 25px;
+    float: right;
+    margin: 5px 0;
+    position: relative;
+}
+
+#airplane{
+    position: relative;
+    width: 60px;
+    height: auto;
+    float: right;
+    top: -22.5px;
+    left: -50px;
 }

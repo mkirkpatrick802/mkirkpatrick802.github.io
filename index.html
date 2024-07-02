@@ -2,59 +2,60 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <title>Michael Kirkpatrick</title>
+    <link rel="icon" href="content/resources/logo(48x48).png"/>
+
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="content/resources/logo(48x48).png"/>
-    <title>About Me</title>
   </head>
-  <body>
+  <body id="body">
+
+    <!-- Splash -->
+    <div id="splash"></div>
+    <script> $("#splash").load("html/splash.html"); </script>
+
+    <!-- Header -->
+    <div id="header"></div>
+    <script> $("#header").load("html/header.html"); </script>
+
     <!-- Content -->
-    <div class="BlackOut"></div>
-    <div class="contentContainer">
-      <!-- Side Bar -->
-      <div class="sidebar" id="sidebar">
-        <!-- Project Showcase -->
-        <div class="projects" id="showcase"></div>
-        <script>
-          $("#showcase").load( "html/showcase.html" );
-        </script>
+    <main id="main">
+      <h1>Michael Kirkpatrick</h1>
+      <img src="content/resources/airplane.svg" alt="airplane" id="airplane"><div id="name_underline"></div>
+      <div id="questions">
+        <div class="question">
+          <h2>Who?</h2>
+        </div>
+        <div class="question">
+          <h2>What?</h2>
+        </div>
+        <div class="question">
+          <h2>When?</h2>
+        </div>
+        <div class="question">
+          <h2>Where?</h2>
+        </div>
+        <div class="question">
+          <h2>Why?</h2>
+        </div>
       </div>
-      <main class="main" id="main">
-        <div class="headshot" id="horseImg">
-          <img class="headshot" src="content/resources/jordan-pony.jpg" alt="Michael on a pony">
-          <p id="horseText">Yes, you are right. I don't fit on this horse.</p>
-        </div>
-        <div class="name">
-          <p>Michael Kirkpatrick </p>
-          <div class="underline"></div>
-        </div>
-        <div class="aboutMe">
-          <div class="Flex">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat ex non sem scelerisque interdum.
-              Fusce ornare volutpat elit sed faucibus. Sed eu nibh diam. Aenean eu velit tincidunt, pellentesque sapien et,
-              lacinia libero. Mauris auctor id ipsum viverra laoreet. Etiam sed tincidunt turpis, non ultricies tortor.
-              Vivamus dictum justo quis est porta tempus. Morbi tempor velit mauris. Sed non ex at sapien pellentesque dictum.
-              Etiam interdum lectus nec molestie porta. Nunc gravida feugiat blandit.
-              Nullam nec sem vitae nunc rhoncus tristique lobortis eget ligula.
-              Nam cursus ac nibh sit amet varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-              Aenean sit amet mi eget augue convallis aliquam.
-            </p>
-          </div>
-        </div>
-      </main>
-    </div>
+    </main>
+
     <!-- Footer -->
+    <div id="showcase"></div>
+    <script> $("#showcase").load("html/showcase.html"); </script>
     <div id="footer"></div>
-    <script>
-      $("#footer").load( "html/footer.html" );
-    </script>
+    <script> $("#footer").load("html/footer.html"); </script>
+
   </body>
-  <script src="js/index.js"></script>
 </html>

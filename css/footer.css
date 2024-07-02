@@ -1,33 +1,20 @@
 footer{
-    background-color: #3E3C3A;
+    background-color: #283618ff;
     position: relative;
+    z-index: 1;
     width: 100%;
     cursor: default;
-    padding-top: 2px;
-}
-.footerOutline{
-    width: 100%;
-    height: 1px;
-    background-color: #c49d9d;
-    box-shadow:
-            0 0 1px 1px #c49d9d,
-            0 0 5px 4px #a76d6d,
-            0 0 10px 5px #6d0c0c;
-}
-.footerContent{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.25);
 }
-footer .name{
+
+footer p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #D3D3D3;
-}
-
-footer .name p{
-    font-size: 2vw;
+    color: #fefae0ff;
+    font-size: 2.2vw;
     padding-left: 20px;
     margin: 10px;
 }
@@ -42,5 +29,5 @@ footer .name p{
     width: 45px;
     height: 45px;
     padding: 2px;
-    margin-top: 10px;
+    margin-top: 4px;
 }

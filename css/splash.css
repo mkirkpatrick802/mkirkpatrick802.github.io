@@ -1,0 +1,10 @@
+#splash_background{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #283618ff;
+    transition: 1s;
+}

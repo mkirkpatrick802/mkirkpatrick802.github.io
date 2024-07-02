@@ -1,15 +1,5 @@
-const sidebar = document.querySelector(".sidebar");
-let sidebarMax = window.getComputedStyle(sidebar).maxHeight;
-sidebarMax = parseInt(sidebarMax);
-let main=document.getElementById("main").offsetHeight;
-if(main > sidebarMax)
-{
-  // alert("Changing:" + sidebarMax + "To" + main);
-  document.getElementById("sidebar").style.maxHeight = (main + 35).toString() + "px";
-}
-
 const project = document.querySelectorAll(".project");
-const blackout = document.querySelector(".BlackOut");
+const blackout = document.querySelector(".blackout");
 let clickedProject;
 isClicked = false;
 
