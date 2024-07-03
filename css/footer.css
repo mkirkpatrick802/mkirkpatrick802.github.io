@@ -5,13 +5,12 @@ footer{
     width: 100%;
     cursor: default;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.25);
 }
 
 footer p{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     color: #fefae0ff;
     font-size: 2.2vw;
@@ -20,6 +19,8 @@ footer p{
 }
 
 .socials{
+    display: flex;
+    flex-direction: row;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 30px;

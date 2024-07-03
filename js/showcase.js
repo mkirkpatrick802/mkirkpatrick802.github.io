@@ -1,5 +1,6 @@
 const project = document.querySelectorAll(".project");
 const blackout = document.querySelector(".blackout");
+const body = document.getElementById("body");
 let clickedProject;
 isClicked = false;
 
@@ -32,6 +33,7 @@ project.forEach(item =>{
     clickedProject.querySelector("video").play();
     clickedProject.querySelector(".text").classList.remove("active");
     clickedProject.style.pointerEvents = "none";
+    body.style.overflow = "hidden";
 
     blackout.classList.add("active");
     blackout.style.pointerEvents = "all";
@@ -45,6 +47,7 @@ blackout.addEventListener("click", () =>{
   clickedProject.querySelector("video").pause();
   clickedProject.querySelector(".text").classList.add("active");
   clickedProject.style.pointerEvents = "all";
+  body.style.overflow = "auto";
 
   blackout.classList.remove("active");
   blackout.style.pointerEvents = "none";

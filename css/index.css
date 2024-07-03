@@ -1,15 +1,3 @@
-#questions{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    justify-content: center;
-    margin: auto;
-}
-
-.question{
-
-}
-
 #name_underline{
     width: 70vw;
     height: 5px;
@@ -28,4 +16,71 @@
     float: right;
     top: -22.5px;
     left: -50px;
+}
+
+#frame_line_1{
+    position: absolute;
+    right: 12%;
+    top: 20%;
+    width: 5px;
+    height: 60vw;
+    background-color: #bc6c25ff;
+    border-radius: 10px;
+}
+
+#questions{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+}
+
+#questions p{
+    margin: 0;
+    font-size: 1.3vw;
+    color: #283618ff;
+    text-align: justify;
+    line-height: 1.35;
+}
+
+.question{
+    margin: 10px 0;
+}
+
+#intro{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+#who_what{
+    display: flex;
+    flex-direction: column;
+}
+
+#headshot{
+    margin: auto 0 auto 30px;
+    max-width: 20vw;
+    max-height: 20vw;
+}
+
+#follow-up{
+    display: flex;
+    flex-direction: row;
+}
+
+#when_where_why{
+    display: flex;
+    flex-direction: column;
+}
+
+#FfF{
+    max-width: 30vw;
+    max-height: 20vw;
+    margin: auto 30px auto 0;
+}
+
+#why{
+    margin-bottom: 30px;
 }

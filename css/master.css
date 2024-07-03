@@ -9,7 +9,6 @@ html, body {
 
 main{
   background-color: #fefae0ff;
-  height: 100vh;
   position: relative;
   z-index: 1;
   box-shadow: 0 1px 20px rgba(0, 0, 0, 0.25);
@@ -20,11 +19,22 @@ h1{
   text-align: center;
   padding-top: 8vh;
   font-size: 3.5vw;
+  color: #283618ff;
 }
 
 h2{
   margin: 0;
   font-size: 2vw;
+  color: #283618ff;
+}
+
+img{
+  display: block;
+  width: auto;
+  height: auto;
+
+  position: relative;
+  border-radius: 5%;
 }
 
 /* Hide Scroll Bar */
