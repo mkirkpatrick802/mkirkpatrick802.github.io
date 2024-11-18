@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/index.js"></script>
 
     <title>Michael Kirkpatrick</title>
     <link rel="icon" href="content/resources/logo(48x48).png"/>
 
     <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/index.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -42,96 +40,8 @@
 <script> $("#header").load("html/header.html"); </script>
 
 <!-- Content -->
-<main id="main">
-    <h1>Michael Kirkpatrick</h1>
-    <img src="content/resources/airplane.svg" alt="airplane" id="airplane">
-    <div id="name_underline"></div>
-    <div id="frame_line_1"></div>
-    <div id="questions">
-        <div id="intro">
-            <div id="who_what">
-                <div class="question">
-                    <h2>Who?</h2>
-                    <p>
-                        I am a passionate and driven individual currently studying how Game Programming patterns can be
-                        applied
-                        to Digital Twins to support agriculture and environmental conservation.
-                        My profound love for adventure and traveling fuels my desire to explore the world and embrace
-                        new
-                        experiences.
-                        When I’m not studying, you can find me outdoors, hiking through scenic trails, camping under the
-                        stars,
-                        and experimenting with cooking in nature’s kitchen.
-                    </p>
-                </div>
-                <div class="question">
-                    <h2>What?</h2>
-                    <p>
-                        I am currently studying Game Programming at Champlain College,
-                        but my academic journey is just beginning as I plan to further my education with
-                        a master's degree in Food Systems at UVM. My goal is to combine my technical expertise
-                        with my passion for agriculture and environmental conservation.
-                    </p>
-                </div>
-            </div>
-            <img src="content/pictures/Headshot_Jordan.jpg" alt="Michael In Jordan" id="headshot">
-        </div>
-        <div id="follow-up">
-            <img src="content/pictures/FfF.jpg" alt="Michael Cooking" id="FfF">
-            <div id="when_where_why">
-                <div class="question">
-                    <h2>When?</h2>
-                    <p>
-                        My journey into the realm of Game Programming began in 2019,
-                        driven by a fascination with technology and interactive experiences.
-                        In 2022, I took a significant step by starting work in the conservation industry,
-                        where I aim to combine my technical skills with my passion for sustainability.
-                    </p>
-                </div>
-                <div class="question">
-                    <h2>Where?</h2>
-                    <p>
-                        Originally hailing from rural Vermont,
-                        I have always felt a deep connection to the outdoors.
-                        Whether it’s hiking through lush forests, camping under starry skies, or scaling rugged cliffs,
-                        my love
-                        for
-                        nature knows no bounds.
-                        This connection to the environment guided my professional journey,
-                        leading me to work with the Vermont Youth Conservation Corps (VYCC)
-                        and the aquaculture company AquaBaan in Bangkok, Thailand.
-                        My academic pursuits and personal adventures have taken me to various corners of the world,
-                        enriching my perspective and fueling my ambition to support sustainable practices through
-                        technology.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="question" id="why">
-            <h2>Why?</h2>
-            <p>
-                Game Programming and Food Systems are two degrees that might seem unrelated,
-                but I believe they form a perfect combination for my aspirations. Game Programming teaches me
-                how to
-                structure complex systems efficiently
-                and manage input data in consistent ways that make real-world sense. Games are digital worlds
-                with
-                invented
-                systems, and with Digital Twins,
-                I aim to create similar digital representations of real-world systems.
-                A strong understanding of Food Systems is essential for grasping the many layers that interact
-                with the
-                environment.
-                By blending these disciplines, I aspire to leverage cutting-edge technology to
-                foster sustainable practices and protect our planet for future generations. Moreover,
-                I want to make Digital Twins accessible and fun to use, encouraging more people to engage with
-                and
-                benefit
-                from these innovative tools.
-            </p>
-        </div>
-    </div>
-</main>
+<div id="content"></div>
+<script> $("#content").load("html/aboutme.html"); </script>
 
 <!-- Footer -->
 <div id="showcase"></div>
