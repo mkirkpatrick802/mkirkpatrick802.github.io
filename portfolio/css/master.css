@@ -48,5 +48,9 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+#core{
+  display: none;
+}
+
 /*
 @-moz-document url-prefix() { html { overflow: hidden;} }*/
