@@ -22,3 +22,16 @@ const bookmarks = document.querySelectorAll('.bookmark');
 bookmarks.forEach(bookmark => {
     setTimeout(() => moveBookmark(bookmark), Math.random() * 3000 + 3000); // Initial random delay (between 3 and 6 seconds)
 });
+
+let current_page = "aboutme.html";
+document.getElementsByClassName('about_me')[0].addEventListener('click', () => {
+    current_page = 'aboutme.html';
+})
+
+document.getElementsByClassName('resume')[0].addEventListener('click', () => {
+    current_page = 'resume.html';
+})
+
+document.getElementsByClassName('gallery')[0].addEventListener('click', () => {
+    current_page = 'gallery.html';
+})
