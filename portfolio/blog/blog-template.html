@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="page-title">Loading...</title>
+
+  <link rel="icon" href="../content/resources/logo(48x48).png" />
+  <link rel="stylesheet" href="../css/master.css" />
+  <link rel="stylesheet" href="../css/blog-post.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+</head>
+<body id="body">
+
+<a href="../index.html">
+  <div id="return">Return to Portfolio</div>
+</a>
+
+<main>
+  <h1 id="post-title">Loading...</h1>
+  <img src="/portfolio/content/resources/airplane.svg" alt="airplane" id="airplane">
+  <div id="name_underline"></div>
+  <h2 id="name">By Michael Kirkpatrick</h2>
+  <article id="post-content">Loading content...</article>
+</main>
+
+<div id="showcase"></div>
+<script>$("#showcase").load("../html/showcase.html");</script>
+
+<div id="footer"></div>
+<script>$("#footer").load("../html/footer.html");</script>
+
+<script>
+  function getQueryParam(key) {
+    return new URLSearchParams(window.location.search).get(key);
+  }
+
+  const postName = getQueryParam("post"); // ?post=my-game-engine
+  if (!postName) {
+    document.getElementById("post-title").textContent = "No post selected.";
+    document.getElementById("post-content").textContent = "Please choose a blog post.";
+  } else {
+    const prettyTitle = postName.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+    document.getElementById("post-title").textContent = prettyTitle;
+    document.getElementById("page-title").textContent = prettyTitle;
+
+    fetch(`./posts/${postName}.md`)
+            .then(res => {
+              if (!res.ok) throw new Error("Post not found");
+              return res.text();
+            })
+            .then(md => {
+              document.getElementById("post-content").innerHTML = marked.parse(md);
+            })
+            .catch(err => {
+              document.getElementById("post-content").textContent = "Could not load blog post.";
+              console.error(err);
+            });
+  }
+</script>
+
+</body>
+</html>

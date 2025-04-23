@@ -1,0 +1,52 @@
+﻿.resume-content {
+    width: 70%;
+    justify-content: center;
+    margin: 8px auto 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    background: #faedcd;
+    border-radius: 20px 0 0 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    margin: 20px 0 0 0;
+}
+
+p {
+    margin: 5px 0 0 0;
+}
+
+.tags {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: -1;
+}
+
+.tag {
+    background-color: #283618ff;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    transform: translateX(0);
+}
+
+.tag:hover {
+    background-color: #606c38ff;
+    transform: translateX(-30px) scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.25);
+}
+
+.tag.active {
+    background-color: #283618ff;
+    transform: translateX(-35px) scale(1.08);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.25);
+}

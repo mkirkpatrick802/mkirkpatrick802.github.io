@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <title>Michael Kirkpatrick</title>
-    <link rel="icon" href="/portfolio/content/resources/logo(48x48).png"/>
+    <link rel="icon" href="content/resources/logo(48x48).png"/>
 
     <link rel="stylesheet" href="/portfolio/css/master.css">
 
@@ -16,19 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XLKY4BQ1NR"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-XLKY4BQ1NR');
-</script>
 <body id="body">
 
 <!-- Splash -->
@@ -37,7 +24,17 @@
 
 <!-- Header -->
 <div id="header"></div>
-<script> $("#header").load("/portfolio/html/header.html"); </script>
+<script>
+    fetch("/portfolio/html/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header").innerHTML = html;
+            const script = document.createElement("script");
+            script.src = "/portfolio/js/header.js";
+            document.body.appendChild(script);
+        });
+</script>
+
 
 <!-- Content -->
 <div id="content"></div>
@@ -45,7 +42,6 @@
 
 <!-- Footer -->
 <div id="showcase"></div>
-<script> $("#showcase").load("/portfolio/html/showcase.html"); </script>
 <div id="footer"></div>
 <script> $("#footer").load("/portfolio/html/footer.html"); </script>
 

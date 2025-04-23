@@ -1,37 +1,38 @@
+// Helper to get a random top offset between -35px and -25px
 function getRandomPosition() {
-    // Get a random value between -35 and -25
-    return Math.floor(Math.random() * 11) - 35 + 'px';
+    return `${Math.floor(Math.random() * 11) - 35}px`;
 }
 
+// Handles the bobbing animation of a bookmark element
 function moveBookmark(bookmark) {
-    // Set a random bobbing position
     bookmark.style.top = getRandomPosition();
 
-    // Reset to -40px after a short delay
     setTimeout(() => {
         bookmark.style.top = '-40px';
-        // Move again after a random interval (between 3 and 6 seconds)
-        setTimeout(() => moveBookmark(bookmark), Math.random() * 3000 + 3000); // Adjust the range as needed
-    }, 500); // Adjust the delay (in milliseconds) as needed
+
+        // Schedule next bob after 3–6 seconds
+        setTimeout(() => moveBookmark(bookmark), Math.random() * 3000 + 3000);
+    }, 500); // Bob duration
 }
 
-// Select all bookmarks
+// Start bobbing effect on all elements with class "bookmark"
 const bookmarks = document.querySelectorAll('.bookmark');
-
-// Start each bookmark's movement on a random interval
 bookmarks.forEach(bookmark => {
-    setTimeout(() => moveBookmark(bookmark), Math.random() * 3000 + 3000); // Initial random delay (between 3 and 6 seconds)
+    setTimeout(() => moveBookmark(bookmark), Math.random() * 3000 + 3000);
 });
 
-let current_page = "aboutme.html";
-document.getElementsByClassName('about_me')[0].addEventListener('click', () => {
-    current_page = 'aboutme.html';
-})
+// Generic click loader for nav buttons
+function setupNavigationButton(className, page) {
+    const element = document.querySelector(`.${className}`);
+    if (element) {
+        element.addEventListener('click', () => {
+            window.current_page = `${page}.html`;
+            LoadContent();
+        });
+    }
+}
 
-document.getElementsByClassName('resume')[0].addEventListener('click', () => {
-    current_page = 'resume.html';
-})
-
-document.getElementsByClassName('gallery')[0].addEventListener('click', () => {
-    current_page = 'gallery.html';
-})
+// Set up navigation links
+setupNavigationButton('about_me', 'aboutme');
+setupNavigationButton('resume', 'resume');
+setupNavigationButton('blog', 'blog');

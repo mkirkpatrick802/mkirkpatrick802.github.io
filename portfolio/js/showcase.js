@@ -1,8 +1,7 @@
-const project = document.querySelectorAll(".project");
-const blackout = document.querySelector(".blackout");
-const body = document.getElementById("body");
-let clickedProject;
-isClicked = false;
+var project = document.querySelectorAll(".project");
+var blackout = document.querySelector(".blackout");
+var body = document.getElementById("body");
+var clickedProject, isClicked;
 
 project.forEach(item =>{
   item.addEventListener("mouseenter", () =>{

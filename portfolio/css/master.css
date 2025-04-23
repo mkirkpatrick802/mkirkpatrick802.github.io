@@ -13,6 +13,7 @@ main{
   position: relative;
   z-index: 1;
   box-shadow: 0 1px 20px rgba(0, 0, 0, 0.25);
+  min-height: 100vh;
 }
 
 h1{
@@ -21,6 +22,37 @@ h1{
   padding-top: 8vh;
   font-size: 3.5vw;
   color: #283618ff;
+}
+
+p{
+  font-size: 1.15vw;
+  margin: 10px;
+}
+
+h3{
+  margin-bottom: 0;
+}
+
+#name_underline{
+  width: 70vw;
+  height: 5px;
+  background: linear-gradient(to right, transparent, #283618ff 10%);
+  filter: blur(.3px);
+  border-radius: 25px;
+  float: right;
+  margin: 5px 0;
+  position: relative;
+  z-index: 1;
+}
+
+#airplane{
+  position: relative;
+  width: 60px;
+  height: auto;
+  float: right;
+  top: -22.5px;
+  left: -50px;
+  z-index: 2;
 }
 
 h2{
